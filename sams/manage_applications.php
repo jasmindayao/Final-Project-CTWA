@@ -182,11 +182,6 @@ $result = mysqli_query($conn, $sql);
                         Review the details of each scholarship application.
                     </p>
                 </div>
-
-                <a href="admin_dashboard.php">
-                    ← Dashboard
-                </a>
-
             </div>
 
             <?php if ($result && mysqli_num_rows($result) > 0): ?>
