@@ -1,0 +1,265 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f3f5f9;
+    color: #0b1e43;
+}
+
+/* HEADER */
+.header {
+    background: #0b1e43;
+    color: white;
+    padding: 10px 4%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #d4a62a;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.branding img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.brand-text {
+    border-left: 3px solid #d4a62a;
+    padding-left: 25px;
+}
+
+.brand-text h1 {
+    font-size: 40px;
+    letter-spacing: 12px;
+}
+
+.brand-text p {
+    font-size: 15px;
+    font-style: italic;
+    color: #f5d98b;
+}
+
+.logout-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 18px;
+    border-bottom: 3px solid #d4a62a;
+    transition: 0.3s;
+}
+
+.logout-link:hover {
+    color: #f5d98b;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    width: 92%;
+    max-width: 1000px;
+    margin: 40px auto;
+    min-height: calc(100vh - 220px);
+}
+
+/* PAGE INTRO */
+.page-intro {
+    background: white;
+    padding: 30px 35px;
+    border: 1px solid #e0e5ed;
+    border-left: 5px solid #d4a62a;
+    margin-bottom: 25px;
+}
+
+.page-label {
+    color: #b68a18;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.page-intro h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    margin: 10px 0;
+    color: #0b1e43;
+}
+
+.page-intro p {
+    color: #68758b;
+    font-size: 15px;
+}
+
+/* SCHOLARSHIP LIST */
+.scholarship-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.scholarship-card {
+    background: #ffffff;
+    border: 1px solid #ddd3c7;
+    padding: 28px;
+    box-shadow: 0 5px 18px rgba(11, 30, 67, 0.08);
+    font-family: Arial, sans-serif;
+}
+
+.scholarship-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ddd3c7;
+}
+
+.scholarship-title h3 {
+    color: #0b1e43;
+    font-family: Georgia, serif;
+    font-size: 24px;
+}
+
+.status span {
+    display: inline-block;
+    background: #315d3a;
+    color: #ffffff;
+    padding: 6px 12px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* SCHOLARSHIP CONTENT */
+.scholarship-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding-top: 22px;
+}
+
+.scholarship-detail h4 {
+    color: #0b1e43;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.scholarship-detail p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.scholarship-deadline {
+    grid-column: 1 / -1;
+    border-top: 1px solid #ddd3c7;
+    padding-top: 16px;
+    color: #555;
+    font-size: 14px;
+}
+
+.scholarship-deadline strong {
+    color: #0b1e43;
+    margin-right: 5px;
+}
+
+/* BUTTONS */
+.scholarship-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    padding-top: 22px;
+    border-top: 1px solid #ddd3c7;
+    font-family: Georgia, serif;
+}
+
+.back-button {
+    display: inline-block;
+    color: #344563;
+    background: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: 1px solid #ccd4df;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #f1f4f8;
+    color: #0b1e43;
+}
+
+.apply-button {
+    display: inline-block;
+    background: #0b1e43;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #0b1e43;
+    transition: 0.3s;
+}
+
+.apply-button:hover {
+    background: #16345f;
+    border-color: #16345f;
+}
+
+/* EMPTY MESSAGE */
+.empty-message {
+    background: #ffffff;
+    border: 1px dashed #cfc6bb;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.empty-message h3 {
+    color: #0b1e43;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.empty-message p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    background: #0b1e43;
+    color: white;
+    text-align: center;
+    padding: 12px 15px;
+
+    border-top: 5px solid #d4a62a;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+footer p:last-child {
+    color: #f5d98b;
+    font-style: italic;
+}
